@@ -29,13 +29,13 @@ public class RequestParamServlet extends HttpServlet {
 
         System.out.println("username = " + username);
         System.out.println("age = " + age);
-
-        // http://localhost:8080/request-param?username=kim&age=20&username=park
-        System.out.println("[이름이 같은 복수 파라미터 조회]");
-        String[] usernames = request.getParameterValues("username");
-        for (String name : usernames) {
-            System.out.println("username = " + name);
-        }
+//
+//        // http://localhost:8080/request-param?username=kim&age=20&username=park
+//        System.out.println("[이름이 같은 복수 파라미터 조회]");
+//        String[] usernames = request.getParameterValues("username");
+//        for (String name : usernames) {
+//            System.out.println("username = " + name);
+//        }
 
         response.getWriter().write("ok");
     }

@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class Member {
     private Long id;
-    private String name;
+    private String username;
     private int age;
 
     public Member() {
@@ -15,7 +15,7 @@ public class Member {
     }
 
     public Member(String name, int age) { // 우클릭 generate constructor
-        this.name = name;
+        this.username = name;
         this.age = age;
     }
 }
